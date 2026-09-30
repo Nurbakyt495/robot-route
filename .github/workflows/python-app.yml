@@ -20,4 +20,4 @@ jobs:
         python-version: "3.12"
 
     - name: Run tests
-      run: python -m unittest discover -s . -p "test_route.py" -v
+      run: python -m unittest test_route -v
