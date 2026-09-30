@@ -19,5 +19,11 @@ jobs:
       with:
         python-version: "3.12"
 
+    - name: Show files
+      run: |
+        pwd
+        ls -la
+        find . -maxdepth 2 -type f
+
     - name: Run tests
       run: python -m unittest test_route -v
